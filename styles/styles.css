@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+    position: relative;
+}
+
+/*Navigation Bar*/
+.navbar-brand{
+    color: #66d9d1;
+}
+
+/*Footer*/
+footer{
+    background:linear-gradient(45deg, #0a0a0a, #3a4452);
+    color:#66d9d1;
+    width:100%;
+    padding: 16px 0px;
+    vertical-align: bottom;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.hero-section{
+    height: 25vh;
+}
+
+.hero-text{
+    color: whitesmoke;
+}
+
+.search-bar{
+    background: rgba(255,255,255,0.1);
+    width: 150%;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    backdrop-filter: blur(4px) saturate(180%);
+    margin: 25px -108px 0px;
+}
+
+.search-bar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+::placeholder{
+    color: #66d9d1;
+}
+
+.search-bar input:focus::placeholder{
+    color:transparent;
+}
+
+.search-bar button{
+    background: rgba(255,255,255,0.1);
+    border: 0;
+    color: #66d9d1;
+    cursor: pointer;
+}
+
+.search-bar #search-btn{
+    padding: 10px 15px 10px 15px;
+    margin: -10px 0px -10px 0px;
+    border-right: 2px solid #66d9d1;
+}
+.search-bar #clr{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 15px 10px 15px;
+    margin: -10px -20px -10px 0px;
+}
+
+.search-bar button:hover{
+    background-color:#66d9d1;
+    color: whitesmoke;
+}
+
+.products-card{
+    height: 100%;
+    border-radius: 0.5rem !important;
+}
+
+.products-card img {
+    border-top-right-radius: 0.5rem !important;
+    border-top-left-radius: 0.5rem !important;
+    object-fit: fill;
+    height: 20rem;
+    transition: 0.2s all;
+}
+
+.products-card img:hover {
+    filter: brightness(50%);
+}
